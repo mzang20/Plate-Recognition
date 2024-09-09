@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="container my-4">
+        <!-- Padding around the entire form container -->
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" name="image_name" required>
+                <input type="submit" value="Upload" class="btn btn-outline-secondary">
+            </div>
+        </form>
+    </div>
+
+    {% if upload %}
+        <div class="container my-4">
+            <!-- Centered Images and Table -->
+            <div class="d-flex flex-column align-items-center mb-4">
+                <!-- Wrapper to align images and table -->
+                <div class="d-flex justify-content-center mb-3">
+                    <img class="rounded img-fluid mx-2" src="/static/upload/{{ upload_image }}" alt="Uploaded Image">
+                    <img class="rounded img-fluid mx-2" src="/static/predict/{{ upload_image }}" alt="Predicted Image">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <table class="table table-bordered text-center" style="width: 100%; max-width: 800px;">
+                        <thead>
+                            <tr>
+                                <th> Copped License Plate Image</th>
+                                <th> Text</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img class="img-fluid" src="/static/roi/{{ upload_image }}" alt="Cropped License Plate Image">
+                                </td>
+                                <td style="background-color: rgb(165, 165, 165);">
+                                    <h1 class="display-8">{{ text }}</h1>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}
