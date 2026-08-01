@@ -1,9 +1,11 @@
 numpy
 pandas
 matplotlib
+seaborn
 opencv-python
 scikit-learn
-jupyterlab
-tqdm
+jupyter
+ultralytics
 pyyaml
-seaborn
+torch
+torchvision
