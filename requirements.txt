@@ -10,3 +10,4 @@ pyyaml
 torch
 torchvision
 tqdm
+pytesseract
