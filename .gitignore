@@ -4,4 +4,8 @@ __pycache__/
 *.py[cod]
 runs/
 *.pt
+!models/best.pt
 reports/
+frontend/dist/
+tests/*.jpg
+tests/*.png

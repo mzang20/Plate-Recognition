@@ -11,3 +11,6 @@ torch
 torchvision
 tqdm
 pytesseract
+fastapi
+uvicorn[standard]
+python-multipart
