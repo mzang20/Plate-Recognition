@@ -4,7 +4,7 @@ An end-to-end computer vision application for detecting and recognizing vehicle 
 
 The project combines a YOLO-based plate detector, image preprocessing, Tesseract OCR, a FastAPI backend, a React frontend, and Docker-based deployment. In addition to returning a plate prediction, the web interface exposes model confidence, validation percentile, bounding-box statistics, and inference latency.
 
-![Application demo](demo.png)
+![Application demo](demo.jpg)
 
 ## Features
 
